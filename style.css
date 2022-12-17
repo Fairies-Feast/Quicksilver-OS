@@ -1,0 +1,76 @@
+body{
+	font-family:Raleway, sans-serif;
+	text-align: center;
+	background: url("https://cdn.pixabay.com/photo/2021/11/18/21/57/christmas-6807486_1280.jpg");
+	color:blue;
+	animation: spin 1s;
+}
+.window {
+	background: white;
+	color: black;
+	height: 500px;
+	width: 600px;
+	float:center;
+}
+button {
+	background: teal;
+	border:none;
+	color: white;
+	padding: 25px 50px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+button:hover {
+	background:#05cccc;
+}
+.popup_background {
+		display:  none;
+		position:  fixed;
+		top:  0;
+		left:  0;
+		background-color:  rgba(0,  0,  0,  0.5);
+		width:  100vw;
+		height:  100vh;
+		align-items:  center;
+		justify-content:  center;
+	}
+
+	.popup  {
+		background-color:  white;
+		text-align:  center;
+		padding:  200px;
+		border-radius:  5px;
+	}
+.navbar {
+	width:100%;
+	background: black;
+	color:white;
+	position:fixed;
+	top: 0px;
+	opacity: 0.95;
+}
+iframe {
+	background:white;
+}
+@keyframes fadein{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes spin{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.watermark {
+	opacity: 0.6;
+	color:orange;
+	position: fixed;
+	text-align: center;
+}

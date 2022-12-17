@@ -1,0 +1,30 @@
+<title>Log in to OS</title>
+<h1>Log in to OS</h1>
+<h3><em>For Best experience, open in new tab</em></h3>
+<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="https://replit.com/public/js/repl-auth-v2.js"></script>
+<div class="window" style="float:left;">
+    <h1>Log in with Replit</h1>
+		<button onclick="LoginWithReplit()">Login with Replit</button><br><br><br><br>
+	<button onclick="window.location.replace('app.html')">Okay</button>
+  </div>
+
+<div class="popup_background" id="popup_background">
+	<div class="popup" id="popup">
+		<iframe src="login.html" width="500px" height="500px"></iframe><br>
+		<button onclick="closePopup()">close</button>
+	</div>
+</div>
+<script>
+	function openPopup() {
+		document.getElementById("popup_background")
+			.style.display = "flex";
+	}
+
+	function closePopup() {
+		document.getElementById("popup_background")
+			.style.display = "none";
+	}
+</script>
+<h3>Copyright, https://OS.fairies0feast.repl.co</h3>
